@@ -1,5 +1,8 @@
 # How to run
 
+### `git clone https://github.com/wajisan/chanel-slinky`
+To load the project on your local.
+
 ### `npm install`
 It will install the node modules that you need.
 
