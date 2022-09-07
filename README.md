@@ -1,3 +1,5 @@
+### How to run
+
 ### `npm install`
 It will install the node modules that you need.
 
