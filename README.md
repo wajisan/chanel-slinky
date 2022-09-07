@@ -10,15 +10,15 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-# Files
+# important files
 
-### Content.js
+### src/content.js
 Here where to change the JSON data
 
-### App.js
+### src/App.js
 the main component to render our App
 
-### components/DisplayItems.jsx
+### src/components/DisplayItems.jsx
 the component used recursively to display our JSON tree based on the "items" property
 
 
