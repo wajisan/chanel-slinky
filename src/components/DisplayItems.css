@@ -32,3 +32,30 @@
 .item-container .prevBtn {
     cursor: pointer;
 }
+
+
+@keyframes append-animate {
+	from {
+		transform: scale(0);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1);
+		opacity: 1;	
+	}
+}
+
+
+.showMe {
+    transform-origin: right;
+    animation: append-animate .2s linear;
+}
+
+.hideMe {
+    
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.3s, opacity 0.3s linear;
+    transform: scaleX(0);
+    height: 0;
+}

@@ -24,17 +24,16 @@ const DisplayItems = memo(({ items, hideSelf }) => {
   /* We render each of us items by using map */
   return items.map((item, index) => (
     <div class="item-container">
-      
       {
-        /* We display the prev button only on the first item (all child have the same parent on one level),
-           also, we check if the function anonymous function "hideSelf" exist (the root doesnt have one),
-        */
-        hideSelf && innerItems.length === 0 && index === 0 &&
-        <span class="prevBtn" onClick={hideSelf}><BsFillArrowLeftSquareFill/></span>
+          /* We display the prev button only on the first item (all child have the same parent on one level),
+            also, we check if the function anonymous function "hideSelf" exist (the root doesnt have one),
+          */
+          hideSelf && innerItems.length === 0 && index === 0 &&
+          <span class="prevBtn" onClick={hideSelf}><BsFillArrowLeftSquareFill/></span>
       }
-
       {/* If innerItems is not empty, we set its display on block to show it */}
-      <div key={index}  style={{ display: innerItems.length ? 'none' : 'block' }}>
+      <div key={index}  className={ (innerItems.length ? 'hideMe' : "showMe") }>
+        
         {
           /* We use a ternary condition to set the item name as a link if it has the property 'link',
             if not, it's only a span tag
